@@ -10,3 +10,20 @@ echo $*
 date
 echo $?
 
+#write a shell Script To check three number greaterthan 
+read -p " Please enter the first-no:" a
+read -p "Please enter the second-no:" b
+read -p "Please enter the third-no: " c
+if [[  (( $a -gt $b )) && (( $a -gt $c )) ]];
+then
+echo "$a is greaterthan $b and $c "
+elif [[ (($b -gt $a )) && (( $b -gt $c )) ]]
+then
+echo "$b is greaterthan $a and $c"
+else
+echo "$c is grreaterthan $a and $b"
+fi
+
+
+
+
