@@ -1,1 +1,11 @@
 #!/bin/bash
+#write a shell script to get the filename as a input from the user and check wheather that file is existed in current dir or not
+
+read -p " Please enter the filename :" filename
+if [[ -f /home/ec2-user/git_prac/$filename ]]
+#if [[ -f $filename ]]
+then
+	echo "$filename this file existed in current-dir"
+else
+	echo "$filename this file not existed in current-dir"
+fi
