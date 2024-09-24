@@ -1,0 +1,6 @@
+#!/bin/bash
+#write a Script too print number of "S" in Mississippi or singapore
+x=Mississippi 
+grep -o "s" <<< "$x" | wc -l
+y=singapore
+grep -o "s" <<< "$y" | wc -l
