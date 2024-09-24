@@ -1,0 +1,17 @@
+#!/bin/bash
+#write a simple shell scripting of list all process
+ps -ef
+
+#write a shell script to print numbers divided by 3 and 5 not 15 from 1 to 100
+echo " print numbers divisible by 3 and 5 not 15 "
+for (( a=0; a<=100;a++ ))
+do
+if [[ $(( a % 3 )) == 0 || $(( a % 5 )) == 0 ]] && [[ $(( a %15 )) != 0 ]]
+then
+echo " divisible by 3 and 5 $a "
+else
+echo " not divisible 15 $a"
+fi
+done
+
+ 
